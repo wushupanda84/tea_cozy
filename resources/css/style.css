@@ -12,11 +12,11 @@ body {
 
 .header {
    display: flex;
-   align-items: center;
    height: 69px;
    border-bottom: 1px solid seashell;
    width: 100%;
    position: fixed;
+   background-color: black;
    z-index: 1;
 }
 
@@ -51,6 +51,8 @@ nav span a{
 .ourmission {
   margin: 0 auto 69px auto;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 700px;
   width: 1200px;
   background-image: url('../images/img-mission-background.jpg');
@@ -58,9 +60,93 @@ nav span a{
 
 .image-content {
   background-color: black;
-  height: 200px;
+  height: auto;
   width: 1200px;
 }
 
 
 /*Mission Content End*/
+
+/*Tea content*/
+.tea-content {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.tea-header {
+ display: block;
+}
+
+.tea-range {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tea {
+ margin-right: 25px;
+}
+
+.tea img {
+  height: 200px;
+  width: 300px;
+}
+
+p.tea-underline {
+  margin: 10px auto;
+  font-weight: bold;
+}
+/*Tea content end*/
+
+/*Locations content*/
+
+.locations {
+  margin: 50px auto 0 auto;
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../images/img-locations-background.jpg');
+}
+
+.locations-image-content h2 {
+  margin-bottom: 15px;
+}
+
+.location-list {
+  display: flex;
+  justify-content: center;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  width: 300px;
+  background-color: black;
+  margin-right: 40px;
+  opacity: 1;
+}
+
+.location-content h3 {
+  height: 26px;
+}
+/*Locations content end*/
+
+/*contact content*/
+
+.contact {
+  height: 200px;
+}
+
+/*contact content end*/
+
+/*Footer content*/
+footer {
+  margin-left: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+/*Footer content*/
