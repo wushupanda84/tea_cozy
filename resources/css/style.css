@@ -17,7 +17,7 @@ body {
    width: 100%;
    position: fixed;
    background-color: black;
-   z-index: 1;
+   z-index: 10;
 }
 
 .logo {
@@ -43,8 +43,9 @@ nav span a{
 /*Header End*/
 
 .content {
-  padding-top: 69px;
-
+  /*padding-top: 69px;*/
+  position: relative;
+  top: 69px;
 }
 
 /*Mission Content*/
@@ -65,12 +66,16 @@ nav span a{
   width: 1200px;
 }
 
+.jump {
+  margin: -69px 0px 69px 0px;
+  position: absolute;
+}
 
 /*Mission Content End*/
 
 /*Tea content*/
 .tea-content {
-  margin: 0 auto;
+  margin: 0 auto 69px auto;
   width: 1000px;
 }
 
@@ -102,7 +107,8 @@ p.tea-underline {
 /*Locations content*/
 
 .locations {
-  margin: 50px auto 0 auto;
+  position: relative;
+  margin: 0 auto 0 auto;
   height: 500px;
   width: 1200px;
   display: flex;
